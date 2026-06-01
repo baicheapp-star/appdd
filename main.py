@@ -33,7 +33,7 @@ def register():
 
     with open(USERS_FILE, "w") as f:
         json.dump(users, f, indent=2)
-
+    print(users)
     return jsonify({"message": "User registered successfully"}), 200
 
 if __name__ == '__main__':
